@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/todo-util",
+  "sourceRoot": "libs/todo-util/src",
+  "prefix": "nx-ng-lib",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/todo-util"],
+      "options": {
+        "jestConfig": "libs/todo-util/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/todo-util/src/**/*.ts",
+          "libs/todo-util/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
