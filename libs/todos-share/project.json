@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/todos-share",
+  "sourceRoot": "libs/todos-share/src",
+  "prefix": "nx-ng-lib",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/todos-share"],
+      "options": {
+        "project": "libs/todos-share/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/todos-share/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/todos-share/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/todos-share"],
+      "options": {
+        "jestConfig": "libs/todos-share/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/todos-share/src/**/*.ts",
+          "libs/todos-share/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

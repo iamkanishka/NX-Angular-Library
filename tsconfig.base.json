@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-ng-lib/todo-util": ["libs/todo-util/src/index.ts"]
+      "@nx-ng-lib/todo-util": ["libs/todo-util/src/index.ts"],
+      "@nx-ng-lib/todos-share": ["libs/todos-share/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

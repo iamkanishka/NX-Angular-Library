@@ -1,11 +1,9 @@
 {
-  "cli": {
-    "analytics": "4070634d-46b9-4441-9c30-bc0cc636b09d"
-  },
   "version": 2,
   "projects": {
     "todo-util": "libs/todo-util",
     "todos": "apps/todos",
-    "todos-e2e": "apps/todos-e2e"
+    "todos-e2e": "apps/todos-e2e",
+    "todos-share": "libs/todos-share"
   }
 }
